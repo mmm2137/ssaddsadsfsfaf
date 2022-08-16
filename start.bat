@@ -14,6 +14,6 @@ set ip = tasklist | find /i "ngrok.exe" >Nul && curl -s localhost:4040/api/tunne
 export WEBHOOK_URL="https://discord.com/api/webhooks/123/w3bh00k_t0k3n"
 curl \
   -H "Content-Type: application/json" \
-  -d '{"username": "test", "content": "%ip%"}' \
+  -d '{"username": "test", "content": %ip%}' \
   $WEBHOOK_URL
 ping -n 10 127.0.0.1 >nul
