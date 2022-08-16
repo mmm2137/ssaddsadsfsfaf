@@ -3,4 +3,5 @@ tasklist | find /i "ngrok.exe" >Nul && goto check || echo "Cannot get an army tu
 :check
 ping 127.0.0.1 > nul
 cls
+echo LDSRDP
 goto check
